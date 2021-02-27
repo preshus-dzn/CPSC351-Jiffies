@@ -1,14 +1,4 @@
-/**
- * jiffies.c
- *
- * Kernel module that communicates with /proc file system.
- * 
- * The makefile must be modified to compile this program.
- * Change the line "simple.o" to "jiffies.o"
- *
- * Operating System Concepts - 10th Edition
- * Copyright John Wiley & Sons - 2018
- */
+//Preshus Dizon CPSC351
 
 #include <linux/init.h>
 #include <linux/module.h>
@@ -65,14 +55,8 @@ void proc_exit(void) {
  * there must be logic that ensures it ultimately returns 0
  * once it has collected the data that is to go into the 
  * corresponding /proc file.
- *
- * params:
- *
- * file:
- * buf: buffer in user space
- * count:
- * pos:
  */
+
 ssize_t proc_read(struct file *file, char __user *usr_buf, size_t count, loff_t *pos)
 {
         int rv = 0;

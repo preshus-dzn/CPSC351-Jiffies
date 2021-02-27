@@ -1,14 +1,4 @@
-/**
- * hello.c
- *
- * Kernel module that communicates with /proc file system.
- * 
- * The makefile must be modified to compile this program.
- * Change the line "simple.o" to "hello.o"
- *
- * Operating System Concepts - 10th Edition
- * Copyright John Wiley & Sons - 2018
- */
+//Preshus Dizon CPSC351
 
 #include <linux/init.h>
 #include <linux/module.h>
